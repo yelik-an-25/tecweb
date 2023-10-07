@@ -1,0 +1,86 @@
+<html>
+    <head>
+        <title>practica etiquetas</title>
+        <body>
+            <form>
+                <p>Datos personales</p>
+                <fieldset>
+                    <label for="fname">First name:</label><br>
+                    <input type="text" id="fname" name="fname"><br>
+                    <label for="lname">Last name:</label><br>
+                    <input type="text" id="lname" name="lname">
+                </form> 
+                </fieldset>
+                <p>lenguaje favorito</p>
+                <form>
+                <fieldset>
+                        <input type="radio" id="html" name="fav_lenguaje" value="html">
+                        <label for="html">HTML</label><br>
+                        <input type="radio" id="CSS" name="fav_lenguaje" value="css">
+                        <label for="css">CSS</label><br>
+                        <input type="radio" id="javascript" name="fav_lenguaje">
+                        <label for="javascript">JavaScript</label>
+                </form>
+                </fieldset>
+                <p>Cual es su vehiculo</p>
+                <form>
+                <fieldset>
+                    <input type="checkbox" id="vehicle 1" name="vehicle1" value="Bike">
+                    <label for="vehicle1"> I have a bike</label><br>
+                    <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+                    <label for="vehicle2">I have a car</label><br>
+                    <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+                    <label for="vehicle3"> I have a boat</label>
+                </form>
+                </fieldset>
+                <p>Enviar</p>
+                <fieldset>
+                <form action="/action_page.php">
+                    <label for="fname">First name:</label><br>
+                    <input type="text" id="fname" name="fname" value="John"><br>
+                    <label for="lname">Last name:</label><br>
+                    <input type="text" id="lname" name="lname" value="Doe"><br><br>
+                    <input type="submit" value="Submit">
+                </form>
+                </fieldset>
+                <p>Marca de auto</p>
+                <fieldset>
+                    <label for="cars">Choose a car:</label>
+                    <select id="cars" name="cars" size="4" multiple> 
+                    <option value="volvo">Volvo</option>
+                    <option value="saab">Saab</option>
+                    <option value="fiat">Fiat</option>
+                    <option value="audi">Audi</option>
+                </select>
+                </fieldset>
+                <fieldset>
+                    <button type="button" onclick="alert('Hello World')">Click Me</button>
+                </fieldset>
+                <br>
+                <p>Personal</p>
+                    <form action="/action_page.php">
+                      <fieldset>
+                        <legend>Personalia:</legend>
+                        <label for="fname">First name:</label><br>
+                        <input type="text" id="fname" name="fname" value="John"><br>
+                        <label for="lname">Last name:</label><br>
+                        <input type="text" id="lname" name="lname" value="Doe"><br><br>
+                        <input type="submit" value="Submit">
+                      </fieldset>
+                    </form>
+                <p>Sitemas</p>
+                <fieldset>
+                    <form action="/action.page.php">
+                        <input list="browsers">
+                        <datalist id="browsers">
+                            <option value="Edge">
+                            <option value="Firefox">
+                            <option value="Chrome">
+                            <option value="Opera">
+                            <option value="Safari">
+                        </datalist>
+                    </form>
+                </fieldset>
+        </body>
+    </head>
+</html>
