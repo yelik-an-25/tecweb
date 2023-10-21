@@ -4,11 +4,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="katherine García">
+    <meta name="description" content="Parcial practico 2 HTML">
     <title>PARCIAL PRACTICO 2</title>
 </head>
 
 <body>
     <!-- Encabezado con imagen -->
+    <div class="logo">
+        <img src="Deporsalud.jpg" alt="Salud y deporte, algo esencial" style="width: 200px; height: 100px;">
+    </div>
     <header class="header">
             <div class="header-content container" >
                 <h1>El Deporte en la Vida Cotidiana</h1>
@@ -23,7 +28,6 @@
                     <li><a href="Otros.html" target="_blank">Otros</a></li>
                 </ul>
             </nav>
-        </div>
     </header>
 
     <section class="container general">
@@ -125,20 +129,41 @@
     <section class="general g2 container">
         <h2>Nuestro Equipo de Entrenadores</h2>
         <div class="general-content">
-            <div class="txt">
+            <div class="txt" id="entrenamiento-personalizado">
                 <h3>Plan de Entrenamiento Personalizado</h3>
                 <p>Obtén un plan de ejercicio personalizado según tus objetivos y capacidad física individual.</p>
+                <ul>
+                    <li>Personalización de rutinas de ejercicios</li>
+                    <li>Seguimiento detallado de progreso</li>
+                    <li>Ajustes según los logros alcanzados</li>
+                </ul>
             </div>
-            <div class="txt">
+            <div class="txt" id="rutinas-innovadoras">
                 <h3>Rutinas Innovadoras</h3>
                 <p>Descubre rutinas innovadoras y emocionantes para mantener tu interés en el ejercicio diario.</p>
+                <ul>
+                    <li>Integración de nuevas tendencias de ejercicios</li>
+                    <li>Variedad de modalidades de entrenamiento</li>
+                    <li>Implementación de tecnologías de vanguardia</li>
+                </ul>
             </div>
-            <div class="txt">
+            <div class="txt" id="asesoramiento-continuo">
                 <h3>Asesoramiento y Supervisión Continuos</h3>
                 <p>Recibe asesoramiento continuo y supervisión detallada para garantizar un progreso seguro y constante.</p>
+                <ul>
+                    <li>Asesoramiento personalizado por expertos en el campo</li>
+                    <li>Supervisión regular de técnicas de entrenamiento</li>
+                    <li>Seguimiento de la salud física y mental</li>
+                </ul>
             </div>
         </div>
+        <select>
+            <option value="entrenamiento-personalizado">Plan de Entrenamiento Personalizado</option>
+            <option value="rutinas-innovadoras">Rutinas Innovadoras</option>
+            <option value="asesoramiento-continuo">Asesoramiento y Supervisión Continuos</option>
+        </select>
     </section>
+    
     
     <br>
     <section class="info-2">
@@ -168,6 +193,7 @@
     <br>
 
     <footer class="footer container">
+        
         <h2>Contacto</h2>
         <form>
             <input class="campo" type="text" placeholder="Nombre">
